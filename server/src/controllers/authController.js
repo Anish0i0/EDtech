@@ -76,7 +76,7 @@ const login = async (req, res) => {
       },
     });
   } catch (er) {
-    res.status(500).json({ message: "Server error", er: error.message });
+    res.status(500).json({ message: "Server error", error: er.message });
   }
 };
 
